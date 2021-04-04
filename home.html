@@ -1,0 +1,91 @@
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="https://toppng.com/uploads/preview/american-football-ball-sport-game-equipmen-american-football-11563254817rvqzug7bzn.png">
+<title>NFL</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="Home.html">FIRST DOWN</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+        <li class="nav-item active">
+            <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="standings.html">Standings</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Contact.html">Contact us</a>
+      </li>
+    </ul>
+</nav>
+</header>
+<div class="container" style="margin-left: 35%; margin-top: 4%;">
+  <div class="opciones d-inline-block" >
+      <label for="temporadas">Select season:</label>
+<select name="temporadas">
+  <option value="2020">2020-2021</option>
+  <option value="2019">2019-2020</option>
+  <option value="2019">2018-2019</option>
+  <option value="2017">2017-2018</option>
+  <option value="2016">2016-2017</option>
+  <option value="2015">2015-2016</option>
+  <option value="2014">2014-2015</option>
+  <option value="2013">2013-2014</option>
+  <option value="2012">2012-2013</option>
+  <option value="2011">2011-2012</option>
+  <option value="2010">2010-2011</option>
+  <option value="2009">2009-2010</option>
+  <option value="2008">2008-2009</option>
+  <option value="2007">2007-2008</option>
+  <option value="2006">2006-2007</option>
+  <option value="2005">2005-2006</option>
+  <option value="2004">2004-2005</option>
+  <option value="2003">2003-2004</option>
+  <option value="2002">2002-2003</option>
+  <option value="2001">2001-2002</option>
+  <option value="2000">2000-2001</option>
+</select>
+  </div>
+  <div class="opciones d-inline-block" >
+      <label for="semanas">Select week:</label>
+<select name="semanas">
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+  <option value="6">6</option>
+  <option value="7">7</option>
+  <option value="8">8</option>
+  <option value="9">9</option>
+  <option value="10">10</option>
+  <option value="11">11</option>
+  <option value="12">12</option>
+  <option value="13">13</option>
+  <option value="14">14</option>
+  <option value="15">15</option>
+  <option value="16">16</option>
+  <option value="17">17</option>
+</select>
+    </div>
+  <button type="button" class="btn btn-dark d-inline-block ml-3" onclick="getSchedule()">Update Schedule</button>
+</div>
+<div id="games" class="container-fluid mt-3 ml-8">
+</div>
+<footer class="text-center text-lg-start mt-5" style="background-color: rgba(0, 0, 0, 0.2)">
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+    David Cocero Quintanilla 3ª GITT
+    <a class="text-dark" href="htttps://nfl.com">:    Oficial NFL page</a>
+  </div>
+</footer>
+</body>
+<script src="teamschedule.js"></script>
+<html>
