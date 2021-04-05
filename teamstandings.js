@@ -18,7 +18,7 @@ function setStandings(conferences){
       divisions.teams.forEach(team=>{
         let city=team.market.toLowerCase().replace(' ','-');
         let name=team.name.toLowerCase().replace(' ','-');
-        let linea= '<tr><th scope="row"><img src="//loodibee.com/wp-content/uploads/nfl-'+city+'-'+name+'-team-logo-2-350x350.png" width=100px height=100px alt="'+team.name+' logo">'+team.market+' '+team.name+'</th><td>'
+        let linea= '<tr><th scope="row"><img src="http://loodibee.com/wp-content/uploads/nfl-'+city+'-'+name+'-team-logo-2-350x350.png" width=100px height=100px alt="'+team.name+' logo">'+team.market+' '+team.name+'</th><td>'
         +team.wins+'</td><td>'+team.losses+'</td><td>'+team.ties+'</td></tr>';
         lineas.push({wins : team.losses,code: linea});
       }
